@@ -1,0 +1,19 @@
+import tkinter as tk
+from tkinter import *
+from tkinter import ttk
+
+def button_press():
+  print("Button Pressed")
+
+def create_textbox(pp):
+  tbox = Entry(pp)
+  tbox.pack()
+
+root =Tk()
+
+x = Label(root,text="My First Label",)
+y = Button(root,text="My First Button",bg="blue",command=button_press)
+x.pack()
+y.pack()
+create_textbox(root)
+root.mainloop()
